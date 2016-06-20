@@ -1,0 +1,40 @@
+td {
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+}
+
+td:hover{
+  background-color: #fed136;
+}
+
+.cellAlive{
+  background-color: #fed136;
+}
+
+.cellAlive:hover{
+  background-color: #fed136;
+}
+
+#gameControls{
+  margin-left: 50px;
+}
+
+.table{
+  margin-bottom: 0px;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0px solid #ddd;
+  }
+}
