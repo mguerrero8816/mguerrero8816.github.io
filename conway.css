@@ -38,3 +38,9 @@ td:hover{
     border: 0px solid #ddd;
   }
 }
+
+.portfolio-img{
+  height: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
