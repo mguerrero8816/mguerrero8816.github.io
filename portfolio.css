@@ -1,0 +1,56 @@
+.portfolio-img{
+  height: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*#about{
+  background-color: red
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto, 100%; z-index: -1;
+}*/
+
+
+#skills, #about, #contact{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto, 100%;
+  z-index: -1;
+}
+
+#skills{
+  background-image: url('img/keyboardblack2.jpg');
+  background-position: center;
+}
+
+#about{
+  background-image: url("img/blackwatch.jpg");
+  background-position: center;
+}
+
+#contact{
+  background-image: url("img/pen.jpg");
+}
+
+.section-heading-bground{
+  color: lightgray;
+}
+
+.bground-light{
+  color: black;
+}
+
+.bground-light .text-muted{
+  color: black;
+}
+
+.bground-dark{
+  color: white;
+}
+
+.bground-dark .text-muted{
+  color: lightgray;
+}
