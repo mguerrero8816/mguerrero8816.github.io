@@ -37,9 +37,9 @@
 
 
 
-    <link rel = "stylesheet" href="conway.css" type="text/css"/>
+    <link rel = "stylesheet" href="css/conway_header.css" type="text/css"/>
     <link rel = "stylesheet" href="portfolio.css" type="text/css"/>
-    <script src="conway.js" type="text/javascript"></script>
+    <script src="js/conway_header.js" type="text/javascript"></script>
 
 </head>
 
@@ -57,9 +57,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Mike Guerrero</a>
-                <a class="navbar-brand page-scroll" href="https://github.com/mguerrero8816"><i class="fa fa-github"></i></a>
-                <a class="navbar-brand page-scroll" href="https://www.linkedin.com/in/mguerrero8816"><i class="fa fa-linkedin"></i></a>
-                <a class="navbar-brand page-scroll" href="https://twitter.com/mguerrero8816"><i class="fa fa-twitter"></i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,7 +69,7 @@
                         <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Project</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">Timeline</a>
@@ -93,17 +90,17 @@
     <!-- Header -->
     <header>
         <div class="bg-light-gray">
-
-          <div id="gameTable" class="table-responsive text-left">
+          <div id="headerGameTable" class="table-responsive text-left">
             <table class="table">
               <tbody id="gameBoard">
               </tbody>
             </table>
-            <div id="gameControls" class="btn-group">
-              <button type="button" id="normalButton" class="btn btn-default">Start</button>
-              <button type="button" id="stopButton" class="btn btn-default">Stop</button>
-              <button type="button" id="randomizeButton" class="btn btn-default">Randomize</button>
-              <button type="button" id="clearButton" class="btn btn-default">Clear</button>
+            <div id="headerGameControls" class="btn-group">
+              <button type="button" id="headerNormalButton" class="btn btn-default">Start</button>
+              <button type="button" id="headerStopButton" class="btn btn-default">Stop</button>
+              <button type="button" id="headerResetButton" class="btn btn-default">Reset</button>
+              <button type="button" id="headerRandomizeButton" class="btn btn-default">Randomize</button>
+              <button type="button" id="headerClearButton" class="btn btn-default">Clear</button>
             </div>
           </div>
 
@@ -193,12 +190,12 @@
         </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
+    <!-- Projects Grid Section -->
     <section id="portfolio" class="bground-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
+                    <h2 class="section-heading">Projects</h2>
                     <h3 class="section-subheading text-muted">Building logic is my passion</h3>
                 </div>
             </div>
@@ -413,7 +410,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <p class="text-muted">I am an aspiring Full Stack Developer with 3.5 years of experience in the Medical Device industry.  My on the job experience building SQL database queries, writing JMP scripting tools to efficiently manipulate data, and designing simple interfaces to reduce the turnaround time of routine procedures has sparked my interest in computer programming.  I am currently attending LEARN Academy's programming boot camp in pursuit of a career in software/web development in the Tech or Biotech industries.</p>
+                    <p class="text-muted">I am a Jr. Full Stack Developer with 3.5 years of experience in the Medical Device industry.  My on the job experience building SQL database queries, writing JMP scripting tools to efficiently manipulate data, and designing simple interfaces to reduce the turnaround time of routine procedures has sparked my interest in computer programming.  I am currently attending LEARN Academy's programming boot camp in pursuit of a career in software/web development in the Tech or Biotech industries.</p>
                 </div>
             </div>
         </div>
@@ -439,10 +436,6 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>

@@ -127,11 +127,6 @@ header{
   color:gray
 }
 
-#gameTable{
-  margin-top: 50px;
-  position: absolute;
-}
-
 header .intro-text{
   padding-top:250px;
   padding-bottom:70px;
@@ -161,11 +156,6 @@ header .intro-text .intro-heading{
 }
 
 @media (min-width:768px){
-  #gameTable{
-    margin-top: 100px;
-    position: absolute;
-  }
-
   header .intro-text{
     padding-top:300px;
     padding-bottom:3px;
