@@ -208,7 +208,7 @@
             <div class="row">
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#battleshipModal" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -229,7 +229,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/construction.png" class="img-responsive portfolio-img" alt="">
+                        <img src="img/portfolio/conway.png" class="img-responsive portfolio-img" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Conway's Game of Life</h4>
@@ -488,83 +488,84 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
+    <div class="portfolio-modal modal fade" id="battleshipModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div id="battleshipModalContent" class="modal-content">
+
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl">
             </div>
           </div>
         </div>
-        <div id="battleshipModal">
-          <!-- Project Details Go Here -->
-          <div id="battleshipContainer" class="container-fluid">
 
-            <div id="battleshipJumbotron" class="jumbotron">
-              <h1 class="text-center"><span id="cheatSpan"></span><span id="gameOver"></span></h1>
-              <nav class="text-center">
-                <span>Themes: </span>
-                <input type="button" value="Classic" id="classicButton"/>
-                <input type="button" value="Caribbean" id="caribbeanButton"/>
-                <input type="button" value="Space" id="spaceButton"/>
-                <!-- <input type="button" value="Developer" id="developerButton"/> -->
-              </nav>
-            </div>
+        <!-- Project Details Go Here -->
+        <div id="battleshipContainer" class="container-fluid">
 
-            <div class="row">
-
-              <div id="battleshipLeftPanel" class="col-sm-3">
-                <h5>Ships Sunk: <span id="shipsSunk"></span></h5>
-                <h5>Ships Floating: <span id="shipsPlaced"></span></h5>
-                <h5>Torpedoes Landed: <span id="hitCounter"></span></h5>
-                <input type="button" value="Normal Torpedo" id="normalButton"/></br>
-                <input type="button" value="Cross Torpedo" id="crossButton"/></br>
-                <!-- <input type="button" value="Seeker Torpedo" id="seekerButton"/></br> -->
-                <h5>Reset Options</h5>
-                <input type="button" value="Reset" id="resetButton"/></br>
-                <input type="text" placeholder="Size (Lower Limit: 10)" id="inputSize"/></br>
-                <input type="text" placeholder="Torpedo Limit" id="inputLimit"/></br>
-                <input type="button" value="Change Limits" id="changeButton"/></br>
-                <input type="button" value="Defaults" id="defaultButton"/></br>
-              </div>
-
-              <div id="battleshipMiddlePanel" class="col-sm-6 text-center">
-                <table id="battleshipTable">
-                  <tbody id="boardBody">
-                  </tbody>
-                </table>
-                <h3 class="text-center">Captain: <span id="hitStatus"></span></h3>
-              </div>
-
-              <div id="battleshipRightPanel" class="col-sm-3">
-                <input type="button" value="Random Shot" id="fireRandom"/></br>
-                Torpedoes: <span id="torpedoesUsed"></span></br>
-                <table>
-                  <tbody id="torpedoGauge">
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="row text-center">
-              <h2>Game Genie</h2>
-              <input type="button" value="Show Ships" id="showButton"/>
-              <input type="button" value="Fill Ammo" id="refillButton"/>
-            </div>
-            <p></p>
+          <div id="battleshipJumbotron" class="jumbotron">
+            <h1 class="text-center"><span id="cheatSpan"></span><span id="gameOver"></span></h1>
+            <nav class="text-center">
+              <span>Themes: </span>
+              <input type="button" value="Classic" id="classicButton"/>
+              <input type="button" value="Caribbean" id="caribbeanButton"/>
+              <input type="button" value="Space" id="spaceButton"/>
+              <!-- <input type="button" value="Developer" id="developerButton"/> -->
+            </nav>
           </div>
 
-          <div class="container">
-            <p></p>
-            <p>Battleship was our first big project at LEARN.  We were allotted 3 days to produce a functioning digital version of the classic game.  by the end of the second day, I was able to get the base game functioning.  On the third day, I decided to add additional features to fill out the rest of the day</p>
+          <div class="row">
 
-            <ul class="list-inline">
-              <li>Date: N/A</li>
-              <li>Client: Personal Project</li>
-              <li>Category: Browser Game</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <div id="battleshipLeftPanel" class="col-sm-3">
+              <h5>Ships Sunk: <span id="shipsSunk"></span></h5>
+              <h5>Ships Floating: <span id="shipsPlaced"></span></h5>
+              <h5>Torpedoes Landed: <span id="hitCounter"></span></h5>
+              <input type="button" value="Normal Torpedo" id="normalButton"/></br>
+              <input type="button" value="Cross Torpedo" id="crossButton"/></br>
+              <!-- <input type="button" value="Seeker Torpedo" id="seekerButton"/></br> -->
+              <h5>Reset Options</h5>
+              <input type="button" value="Reset" id="resetButton"/></br>
+              <input type="text" placeholder="Size (Lower Limit: 10)" id="inputSize"/></br>
+              <input type="text" placeholder="Torpedo Limit" id="inputLimit"/></br>
+              <input type="button" value="Change Limits" id="changeButton"/></br>
+              <input type="button" value="Defaults" id="defaultButton"/></br>
+            </div>
+
+            <div id="battleshipMiddlePanel" class="col-sm-6 text-center">
+              <table id="battleshipTable">
+                <tbody id="boardBody">
+                </tbody>
+              </table>
+              <h3 class="text-center">Captain: <span id="hitStatus"></span></h3>
+            </div>
+
+            <div id="battleshipRightPanel" class="col-sm-3">
+              <input type="button" value="Random Shot" id="fireRandom"/></br>
+              Torpedoes: <span id="torpedoesUsed"></span></br>
+              <table>
+                <tbody id="torpedoGauge">
+                </tbody>
+              </table>
+            </div>
           </div>
+          <div class="row text-center">
+            <h2>Game Genie</h2>
+            <input type="button" value="Show Ships" id="showButton"/>
+            <input type="button" value="Fill Ammo" id="refillButton"/>
+          </div>
+          <p></p>
         </div>
+
+        <div id="battleshipBottomPanel" class="container">
+          <p></p>
+          <p>Battleship was our first big project at LEARN.  We were allotted 3 days to produce a functioning digital version of the classic game.  by the end of the second day, I was able to get the base game functioning.  On the third day, I decided to add additional features to fill out the rest of the day</p>
+
+          <ul class="list-inline">
+            <li>Date: N/A</li>
+            <li>Client: Personal Project</li>
+            <li>Category: Browser Game</li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+        </div>
+
       </div>
     </div>
 

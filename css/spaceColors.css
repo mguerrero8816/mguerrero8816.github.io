@@ -1,3 +1,21 @@
+#battleshipContainer{
+  background-image: url("../img/portfolio/space-background.jpg");
+  background-size: cover;
+  background-position: top;
+  color: white;
+}
+
+#battleshipJumbotron{
+  background-image: url("../img/portfolio/space-jumbotron.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+
+#battleshipContainer input{
+  color: black;
+}
+
 .boardCell{
   background-color: #2B3E42;
   border-color: darkgreen;

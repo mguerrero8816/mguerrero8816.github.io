@@ -25,3 +25,11 @@
 #battleshipRightPanel{
   text-align: left
 }
+
+#battleshipBottomPanel{
+  color: white;
+}
+
+#battleshipModalContent{
+  background-color: black;
+}
