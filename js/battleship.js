@@ -374,15 +374,15 @@ $(document).ready( function() {
   $("#fireRandom").on("click", fireRandom);
 
   $("#caribbeanButton").on("click", function(){
-    $("#themeSwitcher").attr("href", "caribbean.css");
+    $("#themeSwitcher").attr("href", "css/caribbeanColors.css");
   });
 
   $("#classicButton").on("click", function(){
-    $("#themeSwitcher").attr("href", "classic.css");
+    $("#themeSwitcher").attr("href", "css/classicColors.css");
   });
 
   $("#spaceButton").on("click", function(){
-    $("#themeSwitcher").attr("href", "space.css");
+    $("#themeSwitcher").attr("href", "css/spaceColors.css");
   });
 
   $("#showButton").on("click", function(){

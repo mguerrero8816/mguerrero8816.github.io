@@ -1,10 +1,6 @@
 .boardCell{
-  height: 50px;
-  width: 50px;
   background-color: #2B3E42;
   border-color: darkgreen;
-  border-width: 2px;
-  border-style: solid;
 }
 
 .boardCell:hover{
@@ -36,12 +32,8 @@
 }
 
 .torpedoCell{
-  height: 17px;
-  width: 20px;
   background-color: #F2583E;
   border-color: black;
-  border-width: 2px;
-  border-style: solid;
 }
 
 .spentTorpedo{

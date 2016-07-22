@@ -1,10 +1,23 @@
+#battleshipContainer{
+  background-image: url("../img/portfolio/battleship-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#battleshipJumbotron{
+  background-image: url("../img/portfolio/battleship-jumbotron.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: #552300;
+}
+
+#battleshipContainer input{
+  color: black;
+}
+
 .boardCell{
-  height: 50px;
-  width: 50px;
   background-color: #00a7be;
   border-color: black;
-  border-width: 2px;
-  border-style: solid;
 }
 
 .boardCell:hover{
@@ -36,12 +49,8 @@
 }
 
 .torpedoCell{
-  height: 17px;
-  width: 20px;
   background-color: #9a2511;
   border-color: black;
-  border-width: 2px;
-  border-style: solid;
 }
 
 .spentTorpedo{

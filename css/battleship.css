@@ -1,0 +1,27 @@
+#battleshipMiddlePanel *{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#battleshipModal td{
+  border-width: 2px;
+  border-style: solid;
+}
+
+.boardCell{
+  height: 50px;
+  width: 50px;
+}
+
+.torpedoCell{
+  height: 17px;
+  width: 50px;
+}
+
+#battleshipLeftPanel{
+  text-align: right;
+}
+
+#battleshipRightPanel{
+  text-align: left
+}
