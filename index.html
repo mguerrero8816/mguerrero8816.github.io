@@ -41,6 +41,10 @@
     <link rel = "stylesheet" href="portfolio.css" type="text/css"/>
     <script src="js/conway_header.js" type="text/javascript"></script>
 
+    <!-- Battleship js and css -->
+    <link id="themeSwitcher" href="caribbean.css" type="text/css" rel="stylesheet"/>
+    <script src="battleship.js" type="text/javascript"></script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -212,8 +216,8 @@
                         <img src="img/portfolio/construction.png" class="img-responsive portfolio-img" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Student Matcher</h4>
-                        <p class="text-muted">Ruby on Rails</p>
+                      <h4>Battleship</h4>
+                      <p class="text-muted">Javascript</p>
                     </div>
                 </div>
 
@@ -241,8 +245,8 @@
                         <img src="img/portfolio/construction.png" class="img-responsive portfolio-img" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Battleship</h4>
-                        <p class="text-muted">Javascript</p>
+                      <h4>Student Matcher</h4>
+                      <p class="text-muted">Ruby on Rails</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -313,8 +317,8 @@
                                     <h4 class="subheading">LEARN Academy</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">During my time in Product Support, I learned about Programming Bootcamps and eagerly researched the local bootcamps in San Diego.  My interview with Rob at LEARN Academy quickly cemented my interest in attending a bootcamp, and it has been one of the most fulfilling decisions of my life.</p>
-                                    <!-- I have always wanted to face challenges, and the bootcamp's schedule of at least one language or framework per week provided me with more than enough knowledge to push me to my limits.  I spent my days in class, and my nights networking at programming events, or constructing personal projects at home to keep my mind sharp.  The skills that I developed at LEARN Academy  -->
+                                    <p class="text-muted">
+                                      During my time in Product Support, I learned about Programming Bootcamps and eagerly researched the local bootcamps in San Diego.  My interview with Rob quickly cemented my interest in attending LEARN Academy's program.  I have always sought out challenges, and the bootcamp's schedule of at least one language or framework per week provided me with more than enough knowledge to push me to my limits.  I spent my days in class, and my nights networking at programming events, or constructing personal projects at home to keep my mind sharp.</p>
                                 </div>
                             </div>
                         </li>
@@ -492,24 +496,68 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/maintenance.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <div class="jumbotron">
+                                <h1 class="text-center"><span id="cheatSpan"></span><span id="gameOver"></span></h1>
+                                <nav class="text-center">
+                                  <span>Themes: </span>
+                                  <input type="button" value="Classic" id="classicButton"/>
+                                  <input type="button" value="Caribbean" id="caribbeanButton"/>
+                                  <input type="button" value="Space" id="spaceButton"/>
+                                </nav>
+                            </div>
+
+                            <div class="container">
+                              <div class="row text-right">
+                                <div class="col-sm-3">
+                                  <h5>Ships Sunk: <span id="shipsSunk"></span></h5>
+                                  <h5>Ships Floating: <span id="shipsPlaced"></span></h5>
+                                  <h5>Torpedoes Landed: <span id="hitCounter"></span></h5>
+                                  <input type="button" value="Normal Torpedo" id="normalButton"/></br>
+                                  <input type="button" value="Cross Torpedo" id="crossButton"/></br>
+                                  <input type="button" value="Seeker Torpedo" id="seekerButton" disabled/></br>
+                                  <h5>Reset Options</h5>
+                                  <input type="button" value="Reset" id="resetButton"/></br>
+                                  <input type="text" placeholder="Size (Lower Limit: 10)" id="inputSize"/></br>
+                                  <input type="text" placeholder="Torpedo Limit" id="inputLimit"/></br>
+                                  <input type="button" value="Change Limits" id="changeButton"/></br>
+                                  <input type="button" value="Defaults" id="defaultButton"/></br>
+                                </div>
+                                <div class="col-sm-8 text-center">
+                                  <table>
+                                    <tbody id="boardBody">
+                                    </tbody>
+                                    <caption class="text-center" align="bottom">
+                                      <h2>Captain: <span id="hitStatus"></span></h2>
+                                    </caption>
+                                  </table>
+                                </div>
+                                <div class="col-sm-1">
+                                  <input type="button" value="Random Shot" id="fireRandom"/>
+                                  <table>
+                                    <tbody id="torpedoGauge">
+                                    </tbody>
+                                    <caption>Torpedoes: <span id="torpedoesUsed"></span></caption>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="row text-center">
+                                <h2>Game Genie</h2>
+                                <input type="button" value="Show Ships" id="showButton"/>
+                                <input type="button" value="Fill Ammo" id="refillButton"/>
+                              </div>
+                            </div>
+
+
+                            <p>Battleship was my first big project at LEARN.  We were allotted 3 days to produce a functioning digital version of the classic game.  was able to get the base game functioning by the second day, and on the third day, I decided to add additional features to fill out the rest of the day</p>
                             <ul class="list-inline">
                                 <li>Date: N/A</li>
                                 <li>Client: Personal Project</li>
-                                <li>Category: N/A</li>
+                                <li>Category: Browser Game</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
